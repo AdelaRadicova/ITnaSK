@@ -1,0 +1,87 @@
+
+/* Filter */
+
+#filter {
+    padding: 1.2em!important;
+}
+
+.filterLabel {
+    width: 100%;
+}
+
+.filterRadioButt {
+    margin-right: 1em;
+}
+
+.filter-group {
+    margin-top: 1em;
+}
+
+.filterButt {
+    margin-top: 1.4em;
+    text-align: right;
+    align-self: flex-end;
+    border: none;
+    padding: 0.3em 1.3em;
+    border-radius: 2px;
+    font-size: 1.15em;
+    transition: all 0.1s;
+}
+
+.resetButt {
+    background-color: #b42717;
+    color: #efefef;
+}
+
+.resetButt:hover {
+    color: #181818;
+    background-color: #ee2b2b
+}
+
+#showFilterButt {
+    outline: none!important;
+    border: none!important;
+}
+
+.bi-filter {
+    font-size: 1.6em;
+}
+
+.filter-active {
+    color: #efefef!important;
+}
+
+.filterDisplay {
+    display: flex!important;
+}
+
+/* Breakpoint, kedy sa uz title nezmesti do navbar */
+@media screen and (max-width: 780px) {
+
+    #filter {
+        display: none;
+    }
+
+    #cont-f {
+        padding: 1em!important;
+    }
+
+    .flex-col {
+        flex-direction: column-reverse!important;
+        flex-wrap: wrap!important;
+    }
+
+
+    .spList-w-md-100 {
+        width:100% !important;
+        margin: 0!important;
+        justify-content: left!important;
+        padding: 0!important;
+    }
+
+    .stretch {
+        margin-right: auto!important;
+        margin-left: auto!important;
+        width: 100% !important;
+    }
+}

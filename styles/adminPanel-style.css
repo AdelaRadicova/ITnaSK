@@ -1,0 +1,338 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    min-height: 100vh;
+}
+
+body {
+    background-color: #c4c4c4;
+    min-height: 100vh;
+}
+
+.my-container {
+    transition: 0.4s;
+    display: block;
+    margin-left: 220px;
+}
+
+/* Navbar */
+.navbar {
+    width: 220px;
+    height: 100vh;
+    position: fixed;
+    background-color: #404250;
+    transition: 0.4s;
+}
+
+/* Navbar header */
+.navbar-brand {
+    text-align: center!important;
+}
+
+hr {
+    background-color: #3f8984;
+    height: 2px;
+}
+
+/* Navbar buttons */
+.nav-but,.sub-but {
+    outline: none;
+    border: none;
+    background-color: #404250;
+    color: #efefef;
+    font-size: 1.1em;
+    text-align: left;
+    padding-left: 1em!important;
+    font-weight: lighter;
+}
+
+.dropdown-menu {
+    background-color: #404250;
+}
+
+.sub-but {
+    font-size: 1em;
+    font-weight: normal;
+}
+
+.sub-but:active,
+.sub-but:hover,
+.dropdown-item:active,
+.dropdown-item:focus,
+.dropdown-item:hover,
+.nav-but:active,
+.nav-but:hover {
+    background-color: #3f8984;
+}
+
+#buttOdhlasit,
+#submitPridatVS,
+#submitPridatFak,
+#submitUpravitVS,
+#submitUpravitFak,
+#submitPridatStudProg,
+#submitUpravitStudProg,
+#submitGetKomentare,
+#submitPridatClanok,
+#submitUpravitClanok,
+#submitZmenitMeno,
+#submitZmenitHeslo {
+    background-color: #181818;
+    color: silver!important;
+}
+
+#buttOdhlasit:hover,
+#submitPridatVS:hover,
+#submitPridatFak:hover,
+#submitUpravitVS:hover,
+#submitUpravitFak:hover,
+#submitPridatStudProg:hover,
+#submitUpravitStudProg:hover,
+#submitGetKomentare:hover,
+#submitPridatClanok:hover,
+#submitUpravitClanok:hover,
+#submitZmenitMeno:hover,
+#submitZmenitHeslo:hover {
+    background-color: silver;
+    color: #404250!important;
+}
+
+li {
+    list-style-type: none;
+}
+
+.bi {
+    margin-right: 0.3em;
+}
+
+
+/* side-menu toggle button */
+#menu-btn {
+    display: none;
+    background-color: #3f8984;
+    color: #efefef;
+    box-shadow: 0 0 0 0.25rem #404250;
+}
+
+
+#mode {
+    text-align: left;
+    margin-bottom: 1em;
+    color: #efefef;
+    background-color: #2f6562;
+    padding: 0.15em;
+    border-left: solid 15px #181818;
+    font-weight: lighter;
+
+}
+
+/* Formular-template */
+.panel {
+    background-color: #efefef;
+    padding: 2em 5vw;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1em;
+    min-height: 70vh;
+    box-shadow: -10px 0 13px -7px #000000, 10px 0 13px -7px #000000, -7px 5px 7px 0 rgba(0,0,0,0);
+}
+
+.panel-content {
+}
+
+.panel-element {
+    margin: 1.5em 0.2em;
+    border-radius: 2px;
+}
+
+label {
+    padding: 0 0.3em;
+    width: 10em;
+    font-size: 1em;
+    font-weight: 600;
+    border-left: solid 3px #3f8984;
+
+}
+
+input[type=text],
+select,
+input[type=number],
+textarea {
+    width: 20em;
+    border-radius: 2px;
+    border: 2px solid #404250;
+    color: black;
+    padding: 0.2em 0.3em;
+}
+
+#form3,
+#form6,
+#form11,
+#form12 {
+    width: 100%;
+}
+#form3 select,
+#form3 input[type=text],
+#form3 input[type=number],
+#form6 select,
+#form6 input[type=text],
+#form6 input[type=number] {
+    width: 50%;
+}
+
+#form11 input[type=text],
+#form12 input[type=text],
+#clanokModSelect {
+    margin-top: 1em;
+    width: 100%;
+}
+
+#form3 .panel-element div,
+#form6 .panel-element div {
+    width: 95%;
+}
+
+#form3 .panel-element div div,
+#form6 .panel-element div div {
+    width: 100%;
+}
+
+#form3 label,
+#form6 label {
+    width: 45%;
+}
+
+input[type=text]:focus,
+select,
+input[type=number],
+textarea {
+    outline-color: #a6c8c6;
+}
+
+#submitPridatVS,
+#submitPridatFak,
+#submitUpravitVS,
+#submitUpravitFak,
+#submitVymazatVS,
+#submitVymazatFakultu,
+#submitPridatStudProg,
+#submitUpravitStudProg,
+#submitVymazatSP,
+#submitGetKomentare,
+#submitPridatClanok,
+#submitUpravitClanok,
+#submitZmenitMeno,
+#submitZmenitHeslo {
+    margin-top: 1.4em;
+    text-align: right;
+    align-self: flex-end;
+    border: none;
+    padding: 0.3em 1.3em;
+    border-radius: 2px;
+    font-size: 1.05em;
+    transition: all 0.1s;
+}
+
+#panelPridatVS,
+#panelPridatFakultu,
+#panelUpravitVS,
+#panelUpravitFakultu,
+#panelZmazatVS,
+#panelZmazatFakultu,
+#panelPridatStudProg,
+#panelUpravitStudProg,
+#panelZmazatStudyProg,
+#panelKomentare,
+#panelPridatClanok,
+#panelUpravitClanok,
+#panelZmazatClanok,
+#panelZmenitMeno,
+#panelZmenitHeslo {
+    display: none;
+}
+
+div table {
+    border-top: solid 2px #2f6562;
+    border-bottom: solid 2px #2f6562;
+    text-align: center;
+    width: 100%;
+}
+
+th {
+    background-color: #2b2b2b;
+    color: #efefef;
+    padding: 0.5em 1em;
+}
+
+td {
+    background-color: #a6c8c6;
+    color: #2b2b2b;
+    padding: 0.5em 1em;
+}
+
+.warn {
+    color: #972e26;
+    font-style: italic;
+    font-weight: 500;
+    display: block;
+    font-size: 1em;
+}
+
+.deleteButt {
+    background-color: #b42717;
+    color: silver!important;
+}
+
+.deleteButt:hover {
+    color: #181818;!important;
+    background-color: #ee2b2b
+}
+
+#komentareDiv {
+    width: 100%;
+    margin-top: 2em;
+    padding: 0.5em;
+}
+
+#panelKomentare {
+    width: 100%;
+    margin: 0;
+}
+
+#komentareSelectSP {
+    width: 100%;
+}
+
+
+@media screen and (max-width: 768px) {
+    #menu-btn {
+        display: block;
+        margin-left: auto;
+        justify-content: flex-end;
+        text-align: end;
+        align-self: flex-end;
+    }
+    .navbar {
+        margin-left: -300px;
+    }
+    .my-container {
+        transition: 0.4s;
+        display: block;
+        margin-left: 0;
+    }
+    .active-nav {
+        margin-left: 0;
+    }
+
+    .active-cont {
+        margin-left: -300px
+    }
+}

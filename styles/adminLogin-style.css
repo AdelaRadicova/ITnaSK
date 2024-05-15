@@ -1,0 +1,78 @@
+html {
+    min-height: 100vh;
+}
+
+body {
+    background-color: #c4c4c4;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+h5 {
+    background-color: #2f6562;
+    padding: 0.5em 0.7em;
+    margin-bottom: 3em;
+}
+
+.login-panel {
+    margin-top: 15vh;
+    background-color: #404250;
+    color: #c4c4c4;
+    box-shadow: -10px 0 13px -7px #000000, 10px 0 13px -7px #000000, -7px 5px 7px 0 rgba(0,0,0,0);
+}
+
+.icon {
+    background-color: #2f6562;
+    padding: 0.25em 0.55em;
+    border-radius: 2px;
+}
+
+.login-box {
+    padding: 20px 80px;
+}
+
+/* Inspirovane: https://www.tronic247.com/how-to-create-a-3d-button-with-css/ */
+#subButt {
+    width: 100%;
+    /*background: #2f2f2f;*/
+    background: #2f6562;
+    border: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    border-radius: 4px;
+    color: #c4c4c4;
+    font-weight: bold;
+    box-shadow: 1px 1px 5px #000, -1px -1px 5px #6f6f6f, inset 1px 1px 5px #2b2b2b, inset -1px -1px 5px #424242;
+    transition: all 0.1s;
+}
+
+#subButt:active {
+    box-shadow: 1px 1px 5px #5b5b5b, -1px -1px 5px #000, inset 1px 1px 5px #5b5b5b, inset -1px -1px 5px #000;
+}
+
+input {
+    width: max-content;
+    border-radius: 2px;
+    background-color: #404250;
+    color: whitesmoke;
+}
+
+input:focus {
+    outline-color: #2f6562;
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        display: block;
+        min-height: 100vh;
+        margin: 15px;
+    }
+
+    .login-panel {
+    }
+    .login-box {
+        padding: 20px 20px;
+    }
+}

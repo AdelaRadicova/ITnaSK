@@ -1,0 +1,2 @@
+meno : MasterAdmin
+heslo : ITnaSK

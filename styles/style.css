@@ -1,0 +1,292 @@
+
+/* Body */
+
+html {
+    min-height: 100vh;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: rgb(243 244 246)!important;
+    margin: 0!important;
+    padding: 8rem 0!important;
+    justify-content: center!important;
+    align-items: center!important;
+    padding-bottom: 0!important;
+    min-height: 100vh!important;
+}
+
+.body {
+    margin-left: 3em!important;
+    margin-right: 3em!important;
+    min-height: 100vh!important;
+}
+
+/* text */
+.homepage-content {
+    width: 100%;
+    /*margin: 2em 0;*/
+}
+
+h4 {
+    font-size: 1.3em;
+    margin-right: 0;
+    background-color: #404250;
+    color: #efefef;
+    padding: 0.35em 0.5em;
+    margin-bottom: 1.7em;
+    font-family: 'Work Sans', sans-serif;
+    max-width: fit-content;
+}
+
+.subtitle {
+    display:inline;
+    padding: 0 3.3em 0 1em;
+}
+
+.subtitle-margin {
+    margin-top: 3em;
+}
+
+.shadow-box {
+    background-color: #404250;
+    box-shadow: -17px 10px 18px 0 rgba(64,66,80,0.75);
+}
+
+p {
+    color: #404250;
+    font-family: 'Work Sans', sans-serif;
+}
+
+/* scroll-up arrow */
+.shift-up {
+    color: #3f8984;
+    font-size: 55px;
+    position: fixed;
+    bottom: 45px!important;
+    right: 32px;
+    opacity: 0;
+    pointer-events: none;
+    outline: none!important;
+    border: none!important;
+    background: transparent!important;
+}
+
+
+/* go back button */
+.go-back-butt {
+    color: #3f8984;
+    font-size: 25px;
+    margin-right: 1em;
+    width: fit-content;
+    display: inline!important;
+}
+
+.go-back-butt:hover,
+.go-back-butt:active {
+    color: #3f8984;
+    opacity: 0.7;
+}
+
+.shift-up.active {
+    bottom: 32px;
+    pointer-events: auto;
+    opacity: 1;
+}
+
+.shift-up:hover {
+    color: #2f6562;
+}
+
+/* <a> */
+.clear-link, a {
+    text-decoration: none!important;
+}
+
+.clear-link:visited {
+    color: unset!important;
+}
+
+.a:link:active {
+    color: unset!important;
+}
+
+a.setLink {
+    color: black!important;
+}
+
+/* footer */
+footer{
+    background: #404250;
+    margin-bottom: auto;
+    padding: 0.3em 3em;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 20vh;
+    display: block;
+    margin-top: 3em;
+    align-items: center
+}
+
+.admin,
+.foot,
+.onas {
+    color: silver!important;
+    font-weight: bold;
+    padding: 1em 1em 0;
+    font-size: 1.1em;
+}
+
+.me {
+    font-size: 0.8em;
+    color: silver;
+    padding: 0 1em;
+}
+
+.admin,
+.onas {
+    margin-left: 3em;
+    min-width: fit-content;
+}
+
+.admin a,
+.onas a {
+    color: unset;
+}
+
+.admin a:hover,
+.onas a:hover {
+    color: whitesmoke!important;
+}
+
+.foot-logo {
+    font-size: 1.3em;
+    padding: 0 1em;
+    color: #3f8984;
+    font-weight: bolder;
+    text-align: right;
+}
+
+/* o nas podstranka */
+#oNas {
+    margin: 0 5em;
+    font-family: 'Work Sans', sans-serif;
+}
+
+#oNas p {
+    text-align: justify;
+    font-weight: bolder;
+}
+
+
+@media screen and (max-width: 300px) {
+
+    body {
+        padding: 8rem;
+    }
+
+    .homepage-content {
+        margin: 0!important;
+    }
+}
+
+/* Breakpoint, kedy sa uz title nezmesti do navbar */
+@media screen and (max-width: 780px) {
+
+    body {
+        padding: 8rem 1.5rem;
+        /*padding-top: 11vh!important;*/
+        padding-top: 54px!important;
+
+    }
+
+    .homepage-content {
+        margin-top: 0!important;
+    }
+
+    p {
+        margin-left: 0!important;
+    }
+}
+
+/* Full-on navbar --> Hamburger menu */
+@media screen and (max-width: 1199px) {
+
+    .container {
+        margin: 0!important;
+        padding: 0!important;
+        min-width: 100%!important;
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+}
+
+@media screen and (min-width: 1195px) and (max-width: 1355px) {
+
+    .homepage-content {
+        width: 100%;
+        margin: 2em 0.3rem;
+    }
+}
+
+@media screen and (max-width: 400px) {
+
+    .subtitle {
+        font-size: small;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    .subtitle {
+        font-size: medium;
+    }
+
+    #oNas {
+        margin: 0 1em;
+    }
+
+    .body {
+        margin-left: 1em!important;
+        margin-right: 1em!important;
+    }
+}
+
+@media screen and (max-width: 637px) {
+
+    .foot-logo {
+        padding: 1em 1em 0;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    footer {
+        font-size: x-small;
+    }
+}
+
+@media screen and (max-width: 530px) {
+    footer {
+        padding: 0.1em;
+    }
+
+    .admin,
+    .onas {
+        margin-left: 0.1em;
+    }
+
+    .foot,
+    .me,
+    .onas,
+    .admin {
+        padding: 0.6em 0.6em 0;
+        font-size: 0.9em;
+    }
+
+    .foot-logo {
+        font-size: 1.1em;
+    }
+}

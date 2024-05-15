@@ -1,0 +1,96 @@
+
+/* Study prog */
+
+.sp-header {
+    margin-left: 2em;
+    width: 95%!important;
+}
+
+.subheader-sp {
+    margin-bottom: 1em!important;
+}
+
+/* Study prog panel box */
+
+.panel-body {
+    background-color: #404250!important;
+    color: #efefef;
+    padding: 1em 2em!important;
+    font-weight: bolder;
+    border-left: solid 10px #3f8984;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.panel-body.clear-panel {
+    background-color: #d2cdcd !important;
+    color: #2b2b2b!important;
+    padding: 2em!important;
+    font-weight: bold!important;
+    border-left: none!important;
+}
+
+.panel-body.clear-panel:hover,
+.panel-body.clear-panel:active {
+    background-color: #d2cdcd !important;
+    color: #2b2b2b!important;
+}
+
+.panel-body:hover,
+.panel-body:active {
+    background-color: rgb(74, 77, 93) !important;
+}
+
+#sp-box {
+    background: silver!important;
+    color: #3D3D3D;
+}
+
+#sp-box:hover,
+#sp-box:active {
+    background-color: #ababab!important;
+}
+
+#spList {
+    width: 90%;
+    margin: 0 2em;
+}
+
+/* Studijny program - clanok */
+
+.spText {
+    margin: 4em 2em;
+    margin-left: 0;
+    text-align: justify;
+}
+
+
+/* Breakpoint, kedy sa uz title nezmesti do navbar */
+@media screen and (max-width: 780px) {
+
+    .spText {
+        margin-left: 0!important;
+        margin-right: 0!important;
+    }
+
+    .sp-header {
+        margin-left: 0!important;
+        width: 100% !important;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .w-md-100 {
+        width:80% !important;
+        margin: 0 5vw!important;
+        justify-content: left!important;
+    }
+}
+
+@media screen and (max-width: 625px) {
+
+    iframe {
+        width: 100%;
+        height: auto;
+    }
+}

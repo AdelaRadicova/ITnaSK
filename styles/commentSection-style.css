@@ -1,0 +1,211 @@
+
+/* Comment section */
+
+#comment-section {
+    background: rgba(64, 66, 80, 0.6);
+    width: 100%;
+    height: auto;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(64,66,80,0.6) 0%, rgba(64,66,80,1) 100%);
+}
+
+#comm-sect-header {
+    text-decoration: underline;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: bolder;
+    font-size: x-large;
+}
+
+.comment-sect-title {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: bold;
+    /*display: inline;*/
+}
+
+.comment-box {
+    background-color: rgba(245, 245, 245, 0.71);
+    padding: 1em 0.6em;
+    border-radius: 3px;
+    font-family: 'Work Sans', sans-serif;
+    padding-bottom: 0.5em!important;
+}
+
+.comment-box:hover,
+.comment-box:active {
+    margin: 0.2em;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    cursor: pointer;
+}
+
+.comment-date {
+    font-weight: normal;
+    font-style: italic;
+}
+
+.citat-viac {
+    font-weight: bold;
+    font-size: medium;
+    color: #8a770c;
+}
+
+.comment-autor {
+    font-size: medium;
+    background: rgba(43, 43, 43, 0.88);
+    background: rgb(130, 164, 163);
+    color: whitesmoke;
+    color: rgb(43, 43, 43);
+    padding: 0.4em 0.6em;
+    border-radius: 3px;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: bolder;
+}
+
+.comment-box-ukazka {
+    border-radius: 3px;
+    padding: 1.3em 0.6em 0.4em 0.6em;
+    background: rgba(245, 245, 245, 0.71);
+}
+
+.comment-box-otazka {
+    font-weight: bold;
+    font-size: medium;
+}
+
+.comment-box-body {
+    background-color: transparent;
+    margin-top: 0.5em;
+    border-radius: 3px;
+    padding: 1.3em 0.6em 0.4em 0.6em;
+}
+
+#scroll-to-message,
+#leaveComment,
+#sortDown,
+#sortUp {
+    background: #2B2B2BFF;
+    border: none;
+    font-size: 1.3em;
+    width: 3em;
+    height: auto;
+    padding: 0.2em 0;
+    border-radius: 3px;
+    color: #c4c4c4;
+    font-family: 'Work Sans', sans-serif;
+}
+
+#scroll-to-message {
+    background: transparent;
+    color: whitesmoke;
+    font-size: x-large;
+}
+
+#sortDown,
+#sortUp {
+    padding: 0 0.3em;
+    width: fit-content;
+}
+
+#leaveComment {
+    width: 13em!important;
+    background-color: #404250;
+    font-weight: 700;
+}
+
+#loadMoreCommButt {
+    background: #2B2B2BFF;
+    border: none;
+    padding: 0.5em 1.2em;
+    width: 15em;
+    font-size: 0.9em;
+    border-radius: 3px;
+    color: #c4c4c4;
+    font-weight: bold;
+    font-family: 'Work Sans', sans-serif;
+}
+
+#leaveComment:hover,
+#sortDown:hover,
+#sortUp:hover,
+#loadMoreCommButt:hover {
+    background: #484848;
+}
+
+#leaveComment:active,
+#sortDown:active,
+#sortUp:active,
+#loadMoreCommButt:active {
+    background: #2B2B2BFF;
+    box-shadow: 1px 1px 5px #5b5b5b, -1px -1px 5px #000, inset 1px 1px 5px #5b5b5b, inset -1px -1px 5px #000;
+}
+
+
+/* snack-bar */
+
+/* zdroj : https://www.w3schools.com/howto/howto_js_snackbar.asp */
+
+/* The snackbar - position it at the bottom and in the middle of the screen */
+#snackbar {
+    visibility: hidden; /* Hidden by default. Visible on click */
+    min-width: 250px; /* Set a default minimum width */
+    margin-left: -125px; /* Divide value of min-width by 2 */
+    background-color: #333; /* Black background color */
+    color: #fff; /* White text color */
+    text-align: center; /* Centered text */
+    border-radius: 3px; /* Rounded borders */
+    padding: 16px; /* Padding */
+    position: fixed; /* Sit on top of the screen */
+    z-index: 1; /* Add a z-index if needed */
+    left: 50%; /* Center the snackbar */
+    bottom: 30px; /* 30px from the bottom */
+    font-family: 'Work Sans', sans-serif;
+}
+
+/* Show the snackbar when clicking on a button (class added with JavaScript) */
+#snackbar.show {
+    visibility: visible; /* Show the snackbar */
+    /* Add animation: Take 0.5 seconds to fade in and out the snackbar.
+    However, delay the fade out process for 2.5 seconds */
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+/* Animations to fade the snackbar in and out */
+@-webkit-keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+}
+
+
+@media screen and (max-width: 960px) {
+    .comment-sect-title {
+        display: block!important;
+    }
+
+    #leaveComment {
+        margin-left: 0.4em;
+        margin-top: 0.4em;
+    }
+}
+
+@media screen and (max-width: 360px) {
+
+    #leaveComment,
+    #loadMoreCommButt {
+        width: 90%!important;
+    }
+}

@@ -1,0 +1,21 @@
+ErrorDocument 404 /error.php
+
+RewriteEngine On
+
+RewriteRule ^fakulty/([0-9]+)$ fakulty.php?vs=$1 [L]
+
+RewriteRule ^studijne-programy-fakulty/([0-9]+)$ listStudijneProgramyPreFakultu.php?f=$1 [L]
+
+RewriteRule ^clanky$ listAllClanky.php [L]
+RewriteRule ^clanok/([0-9]+)$ clanok.php?clanok=$1 [L]
+
+RewriteRule ^studijne-programy$ listAllStudijneProgramy.php [L]
+RewriteRule ^studijne-programy/([0-9]+)$ studijnyProgram.php?sp=$1 [L]
+
+RewriteRule ^studijny-program/([0-9]+)$ studijnyProgram.php?sp=$1 [L]
+
+RewriteRule ^o-nas$ oNas.php [L]
+
+RewriteRule ^admin-login$ admin_system/adminLogin.php [L]
+
+RewriteRule ^404$ error.php [L]

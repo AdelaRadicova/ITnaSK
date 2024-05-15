@@ -1,0 +1,253 @@
+
+/* Navigation */
+
+/* nav-bar */
+nav.navbar {
+    padding-left: 2.5em;
+    padding-right: 2.5em;
+    width: 100vw;
+    background: #404250;
+}
+
+.navbar-collapse {
+    background: #404250!important;
+    width: 100vw!important;
+    margin: 0!important;
+    padding: 0!important;
+}
+
+#nav {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-custom {
+    background-color: #404250;
+    height: 100px;
+    font-family: 'Work Sans', sans-serif;
+}
+
+/* pc icon */
+.pc-image-collapse {
+    display: none;
+}
+
+.pc-image {
+    margin-right: 0.22em;
+}
+
+.pc-image:hover, .pc-image-collapse:hover, .logo-name:hover {
+    opacity: 0.7;
+}
+
+/* title */
+.mob-header {
+    display: none;
+    width: 100%;
+    background-color: #404250!important;
+    text-align: center!important;
+    padding: 0.5em 1.5em!important;
+    margin-bottom: 1.7em;
+}
+
+.logo-name-mob {
+    color: #fafafa;
+    font-weight: bolder;
+    font-family: 'Work Sans', sans-serif;
+    text-align: center!important;
+}
+
+.mob-l {
+    font-size: large;
+    margin-bottom: 0!important;
+}
+
+/* header */
+a.logo {
+    font-size: 2.2rem;
+}
+
+.logo-pack {
+    color: #fafafa;
+    font-weight: bolder;
+}
+
+.logo-slash {
+    color: #56a09b;
+    font-weight: bolder;
+}
+
+/* buttons */
+a.menu-item {
+    font-size: 1rem;
+    font-weight: bolder;
+    background: transparent;
+    color: #fafafa;
+    padding: 0.4rem 0.4rem;
+    border-radius: 3px;
+    margin-left: 1em;
+    font-family: 'Work Sans', sans-serif;
+    min-width: max-content;
+}
+
+.btn {
+    font-family: 'Work Sans', sans-serif;
+}
+
+a.menu-item:hover, input#searchBar:hover,
+.card-btn:hover,
+#submitRecenziu:hover,
+.btn:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+a.menu-item:hover {
+    background-color: #3f8984;
+}
+
+a.menu-item:hover,
+a.menu-item:active,
+.bi-search:hover,
+.bi-search:active {
+    color: whitesmoke;
+}
+
+/* searchbar */
+
+.searchButt {
+    margin-left: 2em;
+    border: #3f8984!important;
+    background: #3f8984!important;
+    height: 90%;
+    text-align: center;
+    border-radius: 3px!important;
+}
+
+form.search {
+    display: inline-flex!important;
+}
+
+#searchBar {
+    border: solid 0.1em #3f8984;
+    margin-left: 1.5em;
+    height: 90%;
+    border-radius: 3px!important;
+}
+
+input#searchBar {
+    background-color: #efefef !important;
+}
+
+input#searchBar:focus {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19)!important;
+    background-color: #a6c8c6!important;
+}
+
+
+@media screen and (max-width: 300px) {
+
+    #searchBar, .form-outline {
+        margin: 0;
+        min-width: 90%;
+    }
+
+    #searchBar, #searchButt {
+        margin: 0;
+        border-radius: 5px;
+    }
+
+    #searchButt {
+        margin: 0.5em 0;
+        width: 80%;
+    }
+}
+
+/* Breakpoint, kedy sa uz title nezmesti do navbar */
+@media screen and (max-width: 780px) {
+
+    .pc-image-collapse {
+        display: inline;
+    }
+
+    .logo-pack {
+        display: none;
+    }
+
+    .navbar-custom {
+        height: 55px;
+    }
+
+    #toggleMobileMenu {
+        top: 54px!important;
+    }
+
+    .mob-header {
+        display: block;
+    }
+
+    .navbar-toggler-icon {
+        width: 1em;!important;
+        height: 1.2em!important;
+        background-size: 80%!important;
+    }
+
+    .navbar-toggler {
+        padding-top: 0!important;
+    }
+}
+
+/* Full-on navbar --> Hamburger menu */
+@media screen and (max-width: 1199px) {
+
+    #toggleMobileMenu {
+        margin: 0!important;
+        padding: 0!important;
+        min-width: 100%!important;
+        position: fixed;
+        left: 0;
+    }
+
+    .navbar-list-collapsed {
+        margin: auto;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+
+    .navbar-list-item-collapsed, .input-group {
+        padding-top: 0.7em;
+        padding-bottom: 0.7em;
+        min-width: 100%;
+    }
+
+    a.menu-item {
+        margin: 0;
+        min-width: 100%;
+        border-radius: 0;
+    }
+
+    #searchBar, .form-outline {
+        margin: 0;
+        min-width: 80%;
+    }
+}
+
+
+@media screen and (min-width: 781px) and (max-width: 1199px) {
+
+    .pc-image {
+        display: inline;
+    }
+
+    #toggleMobileMenu {
+        top: 100px!important;
+    }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1260px) {
+
+    .pc-image {
+        display: none;
+    }
+}
+
